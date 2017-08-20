@@ -1,7 +1,7 @@
 # LinkedIn Bot
 A bot to fetch name, email, title and url of linkedin user based on their public profile and upload that data to google spreadsheet using google api. 
 
-### Running locally
+### Running locally(Python 3 Only)
 
 Clone this repo
 ```sh
