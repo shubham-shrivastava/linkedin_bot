@@ -1,6 +1,6 @@
 asn1crypto==0.22.0
 attrs==15.2.0
-Automat==0.0.0
+Automat
 awsebcli==3.10.3
 beautifulsoup4==4.6.0
 botocore==1.5.80
@@ -34,7 +34,7 @@ pycparser==2.17
 PyDispatcher==2.0.5
 pyOpenSSL==17.0.0
 pyparsing==2.1.4
-pywin32==220
+pypiwin32
 PyYAML==3.12
 queuelib==1.4.2
 requests==2.9.1
