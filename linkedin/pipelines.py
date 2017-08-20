@@ -30,7 +30,8 @@ class LinkedinPipeline(object):
         mylist = [name, url, title, email]
         
         #add data to google spreadsheet.
-        updatevalues(mylist)
+        #Uncomment below line to save to spreadsheet.
+        #updatevalues(mylist)
         line = json.dumps(dict(item)) + "\n"
         
         #Add data to file.
