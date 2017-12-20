@@ -11,16 +11,6 @@ from bs4 import BeautifulSoup
 import requests
 from lxml import html
 
-# def getCookie():
-#     driver = webdriver.Chrome()
-#     driver.get("https://www.linkedin.com")
-#     driver.find_element(By.ID, "login-email").send_keys("shrivastava.shubham219@live.com")
-#     driver.find_element(By.ID, "login-password").send_keys("Shubham@25")
-#     driver.find_element(By.CSS_SELECTOR, "[type='submit'][value='Sign in']").click()
-#     driver.maximize_window()
-#     listcookies = driver.get_cookies()
-#     return listcookies
-
 def striplist(l):
     l = [x.strip().replace('\t',"") for x in l]
     return [x for x in l if x != u'']
@@ -48,7 +38,6 @@ class linkedInSpider(Spider):
             start_urls.append(line)
 
         #Uncomment this to pass urls manually. 
-        #start_urls = ["https://www.linkedin.com/in/shubhamshrivastav/","https://www.linkedin.com/in/ashwani-kumar-97465186/"]
         self.browser.get("https://www.linkedin.com")
         #driver.get("https://www.linkedin.com")
         userid = input("User Id? ")
